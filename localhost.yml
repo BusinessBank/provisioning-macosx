@@ -1,10 +1,10 @@
 - hosts: localhost
   connection: local
   gather_facts: no
-  sudo: no
+  become: no
   vars:
     homebrew_taps:
-      - caskroom/cask
+      - homebrew/cask
     homebrew_packages:
       - { name: readline }
       - { name: openssl }
